@@ -1,6 +1,6 @@
 <template>
 <div>
-    <button class="btn1" v-on:click.prevent > <p class="button-text">button</p>
+    <button class="btn2" v-on:click.prevent > <p class="button-text">{{textbutton2}}</p>
     </button>
     </div>
     
@@ -8,17 +8,18 @@
 
 <script>
 export default {
-    
+   name: "button2",
+   props:['textbutton2']
 }
 </script>
 
 <style lang="sass">
-.btn1 
+.btn2 
  @apply h-10 w-40 rounded-3xl text-white font-bold 
  background-color: $green
  &:hover
       background-color: $blue
-.btn1 
+.btn2
     @media only screen and (max-width: 800px)
         @apply h-8 w-20
 .button-text

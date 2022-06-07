@@ -4,7 +4,7 @@
             <li class="logo-icon"> <img class="logo" src="logo.svg" alt="logo-de-ondacero"></li>
             <NuxtLink to="/"> <li class="btn-home"> <button-home Home=:) /> </li></NuxtLink>
             <li class="btn-heart"><button-heart /></li>
-            <li class="btn"><button-2 /></li>
+            <li class="btn"><button-2 textbutton2= "mis seguidos" /></li>
             <li ><search-bar /></li>
             <li class="btn"><button-user /></li>
             

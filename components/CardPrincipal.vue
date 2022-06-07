@@ -7,7 +7,7 @@
         <h6 id="seccion-text" class= "body">Texto cihdcqnewc</h6>
         <h3 class="leading">Título</h3>
         <h6 id= "sub-text" class="body2"><span class="autor">autor</span> <span class="subtitle3">nombre del programa</span></h6>
-        <button-2 />
+        <button-2 textbutton2= "seguir" />
         </div>
     </div>
 

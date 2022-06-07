@@ -1,8 +1,9 @@
 <template>
-    <div class="LiCap">
+    
+    <NuxtLink to="/player"> <div class="LiCap">
         <p>{{tituloLiCap}}</p>
 
-    </div>
+    </div></NuxtLink>
 </template>
 
 <style lang="sass">
