@@ -20,7 +20,7 @@
     
 
 #search
-    @apply h-10 border-4 rounded-3xl   mt-2
+    @apply h-10 border-4 rounded-3xl
     border-color: $green
     width: 260px
     @media only screen and (max-width: 800px)

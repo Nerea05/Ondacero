@@ -16,17 +16,43 @@
 </span></h6>
  <p class="info">Cuarto episodio de 'After hours', con Gemma Ruiz e Isa Blanco. ¿Qué tienen en común Adele y los coches de choque? ¿Sabes echar gasolina como un profesional o eres tan desastre como nosotras? ¡Escucha, escucha, que hoy hay temazos! </p> </div>
     
-
-
   </div>
+  <div @click="reproducirparar">
+            <default-button :iconType="'play'"  v-show="!isPlaying"  /> 
+            <default-button :iconType="'pause'" v-show="isPlaying" /> 
+
+        </div>
  </div>
 
 </template>
 
 <script>
-export default {
-
+ import {Howl, Howler} from 'howler';
+ export default{
+     props:['title'],
+      data(){
+     return{
+      sound:'',
+      isPlaying: false
+     }
+ },
+ mounted(){
+this.sound = new Howl({
+  src: ['audio.mp3']
+});
+},
+ methods:{
+reproducirparar(){
+    if(this.isPlaying){
+        this.sound.pause()
+        this.isPlaying= false;
+    } else {
+        this.sound.play()
+        this.isPlaying= true;
+    }
 }
+ }
+ }
 </script>
 
 <style lang="sass">
