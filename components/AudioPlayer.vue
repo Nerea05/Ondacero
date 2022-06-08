@@ -1,7 +1,7 @@
 <template>
   <div class="player">
     <!-- song details -->
-    <h5 id="reproductortext" class="subtitle2">titulo.autor</h5>
+    <h5 id="reproductortext" class="subtitle2">After Hours Gema Ruiz </h5>
 
     <!-- control buttons -->
     <div class="controls">
@@ -137,16 +137,19 @@ export default {
 
 <style lang="postcss">
 #reproductortext{
-margin-left: 20px;
-padding: 20px;
+margin-left: 130px;
+padding: 25px;
 color: white;
-
 }
+
 .player{
   background-color: #72B84E;
   height: 200px;
   position: relative;
   bottom: 50px;
+  border-top-left-radius: 6%;
+  border-top-right-radius: 6%;
+  box-shadow: 10px 10px 31px 0px rgba(114,184,78,0.37);
   .song_title{
     color: white;
     font-weight: bold;
@@ -171,18 +174,15 @@ color: white;
         background-color: #72B84E;
         color: white;
         &:hover{
-          background: rgb(8,1,122);
-          background: linear-gradient(45deg, rgba(8,1,122,1) 0%, rgba(255,0,230,1) 100%);;
+          background: #1A1B37;
           color: white;
         }
       }
       &.repeat{
         &.active{
-          background-color: indigo;
           color: white;
         }
         &:hover{
-            background: #1A1B37;
             background: #1A1B37;
             color: white;
         }
@@ -195,14 +195,14 @@ color: white;
     }
   }
   .progress_bar{
-    @apply my-2;
+    @apply my-2 ml-40;
     background-color: white;
     height: 5px;
-    width: 100%;
+    width: 70%;
     @apply relative;
     .no_progress{
-      @apply h-1 cursor-pointer rounded-full bg-gray-500;
-      background-color: gray;
+      @apply h-1 cursor-pointer rounded-full;
+      background-color: white;
       .progress{
         @apply flex w-full justify-end h-1 rounded-full relative;
         background-color: white;
@@ -213,15 +213,16 @@ color: white;
       .progress_btn{
         @apply w-2 h-2 md:w-4 md:h-4  absolute rounded-full shadow;
         background-color: white;
-        border: 1px solid #ccc;
+        
         top: -10px;
       }
     }
   }
   .times{
     display: flex;
-    justify-content: space-between;
     font-size: 0.8em;
+    justify-content: space-around;
+    color: white;
   }
 }
 </style>
