@@ -143,7 +143,9 @@ color: white;
 @media only screen and (max-width: 800px){
   color:#72B84E ;
   position: relative;
-  left: 30px
+  left: 20px;
+  font-weight: bold;
+  font-size: 15pt;
 }
 }
 

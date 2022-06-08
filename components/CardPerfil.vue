@@ -5,11 +5,11 @@
          <h5 >Título</h5>
      <h6 id= "sub-text" class="body2"><span class="autor">autor</span></h6>
      <div class="social">
-           <div class="btnn1"><button2-line  text= "seguir"/></div>
-           <div class="btnn2"><button-download /></div>
-           <div class="btnn3"><button-share /></div>
-           
+         <default-button class="bt1" :textbutton2="'seguir'" />
+     <default-button class="bt2" :iconType="'arrow-down'" />
+     <default-button class="bt2" :iconType="'share-nodes'" />
      </div>
+
      </div>
   </div>
 </template>
@@ -22,6 +22,15 @@ export default {
 </script>
 
 <style lang="sass">
+
+.social
+    display: flex
+    position: relative
+    right: 4px
+    @media only screen and (max-width: 800px)
+     .bt2
+         display: none
+        
 .card-perfil
     background-color: $white
     @apply w-80 ml-12 mt-16
@@ -47,15 +56,5 @@ export default {
         left: 10px
         width: 230px
         height: 150px
-
-.social
-    display: flex
-.btnn1
-    @apply mr-1 mt-2
-.btnn2
-    @apply mr-1 mt-2
-.btnn3
-    @apply mr-1 mt-2 ml-2
-
 
 </style>
