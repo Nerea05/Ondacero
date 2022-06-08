@@ -5,11 +5,11 @@
 
     <!-- control buttons -->
     <div class="controls">
-      <button class="btn_control" disabled>
-        <span class="material-symbols-outlined"><fa :icon="['fas', 'shuffle']" /></span>
+      <button class="btn_control">
+        <span ><fa :icon="['fas', 'shuffle']" /></span>
       </button>
-      <button class="btn_control" disabled>
-        <span class="material-symbols-outlined"><fa :icon="['fas', 'angles-left']" /></span>
+      <button class="btn_control" >
+        <span ><fa :icon="['fas', 'angles-left']" /></span>
       </button>
       <button
         class="btn_control playplause"
@@ -17,7 +17,7 @@
           <span v-show="!isPlaiying" class="material-symbols-outlined"><fa :icon="['fas', 'play']" /></span>
           <span v-show="isPlaiying" class="material-symbols-outlined"><fa :icon="['fas', 'pause']" /></span>
       </button>
-      <button class="btn_control" disabled>
+      <button class="btn_control" >
         <span class="material-symbols-outlined"><fa :icon="['fas', 'angles-right']" /></span>
       </button>
       <button
@@ -167,8 +167,8 @@ color: white;
     justify-content: center; 
     .btn_control{
       @apply p-2 w-10 h-10;
+      color: white;
       border-radius: 50%;
-      background-color: #ddd;
 
       &.playplause{
         background-color: #72B84E;
