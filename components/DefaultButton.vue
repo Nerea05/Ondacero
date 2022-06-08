@@ -34,7 +34,7 @@ export default {
         @apply h-8 w-20
 .button-text
      @media only screen and (max-width: 800px)
-         font-size: 12pt
+         font-size: 11pt
 
         
  

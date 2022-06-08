@@ -11,10 +11,10 @@
     </div>
     <h5 id="section-name" class="h5-pc-bold" > {{tit3}} </h5>
     <div class="grid-cards">
-    <simple-card :source="'/presentador4.png'" />
-    <simple-card />
-    <simple-card />
-    <simple-card />
+    <simple-card :source="'/podcast1.png'" />
+    <simple-card :source="'/podcast2.png'" />
+    <simple-card :source="'/podcast2.png'" />
+    <simple-card :source="'/podcast1.png'"  />
     </div>
 
     

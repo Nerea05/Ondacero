@@ -9,7 +9,9 @@
      <h6  class="body2"><span class="autor">Gema Ruiz. Gasolina, coches de choque y la 'Adele de feria'
 </span></h6>
  <p class="info">Cuarto episodio de 'After hours', con Gemma Ruiz e Isa Blanco. ¿Qué tienen en común Adele y los coches de choque? ¿Sabes echar gasolina como un profesional o eres tan desastre como nosotras? ¡Escucha, escucha, que hoy hay temazos! </p> </div>
-   <audio-player />
+  <div class="audio-playerbox">
+       <audio-player />
+  </div>
 </div>
  </div>
 
@@ -66,6 +68,11 @@
     border-top-right-radius: 10%
     @media only screen and (max-width: 800px)
         box-shadow: none
+
+.audio-playerbox
+     @media only screen and (max-width: 800px)
+         position: relative
+         bottom: 80px
 
 
 </style>

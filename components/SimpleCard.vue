@@ -32,7 +32,8 @@ export default {
     display: flex
     flex-direction: row
     background-color: $white
-    @apply mt-9 ml-4 mr-14
+    @apply mt-9 ml-4 mr-14 
+    padding: 5px
     width: 480px
     height: 130px
     border-radius: 200px
@@ -46,14 +47,14 @@ export default {
     &:hover
         background-color: $secundaryGreen
 .imgPresentador-simple
-    margin-left: 50px
-    @apply p-1 pt-4
+    margin-left: 60px
+    margin-right: 20px
+    @apply p-2 pt-4
     @media only screen and (max-width: 800px)
       margin-left: 10px
 .text-box-simple
-    position: relative
     @media only screen and (max-width: 800px)
-      margin-left: 10px
+      margin-left: 30px
       margin-top: 50px
 
 

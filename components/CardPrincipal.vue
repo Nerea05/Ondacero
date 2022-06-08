@@ -4,9 +4,10 @@
         <div class="card-principal"> 
             <img class="imgPresentador" :src="source" alt="">
             <div id="text-box">
+                <h6 class="body2" id="secciontext">Sección</h6>
                 <h3 class="leading">Título</h3>
                 <h6 id= "sub-text" class="body2">
-                    <span class="autor">autor</span> <span class="subtitle3">nombre del programa</span>
+                    <span class="autor">autor</span> <span>nombre del programa</span>
                 </h6>
             <default-button :textbutton2="'seguir'" />
             </div>
@@ -39,7 +40,7 @@
     z-index: 2
     cursor: pointer
     @media only screen and (max-width: 800px)
-        @apply h-52 w-11/12
+        @apply h-52 w-full
 .card-principal
     &:hover
         background-color: $secundaryGreen
@@ -47,11 +48,14 @@
     margin-left: 150px
     @media only screen and (max-width: 800px)
       margin-left: 10px
+      margin-top: 30px
+      width: 30%
+      height: 80%
 #text-box
     margin-left: 100px
     margin-top: 70px
     @media only screen and (max-width: 800px)
-      margin-left: 10px
+      margin-left: 30px
       margin-top: 50px
 
 
@@ -67,11 +71,16 @@
 
 #sub-text
     color: $green
+    margin-bottom: 10px
 .autor
      @media only screen and (max-width: 800px)
         @apply font-black
 
 
+#secciontext
+    color: $green
+    @media only screen and (max-width: 800px)
+        @apply font-black
 
 
 </style>

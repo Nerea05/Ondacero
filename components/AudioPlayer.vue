@@ -140,6 +140,11 @@ export default {
 margin-left: 130px;
 padding: 25px;
 color: white;
+@media only screen and (max-width: 800px){
+  color:#72B84E ;
+  position: relative;
+  left: 30px
+}
 }
 
 .player{
@@ -150,13 +155,24 @@ color: white;
   border-top-left-radius: 6%;
   border-top-right-radius: 6%;
   box-shadow: 10px 10px 31px 0px rgba(114,184,78,0.37);
+  @media only screen and (max-width: 800px){
+  background-color: white;
+  box-shadow: none;
+  right: 50px
+}
   .song_title{
     color: white;
     font-weight: bold;
+    @media only screen and (max-width: 800px){
+    color: #72B84E;
+}
   }
   .song_author{
     color: white;
     font-size: 0.9em;
+    @media only screen and (max-width: 800px){
+    color: #72B84E;
+}
   }
   img{
     margin-top: 10px;
@@ -165,14 +181,22 @@ color: white;
     @apply p-2;
     display: flex;
     justify-content: center; 
+    @media only screen and (max-width: 800px){
+      position:relative;
+      left: 40px;
+    }
     .btn_control{
       @apply p-2 w-10 h-10;
       color: white;
       border-radius: 50%;
+      @media only screen and (max-width: 800px){
+        color: #72B84E;
+      }
 
       &.playplause{
         background-color: #72B84E;
         color: white;
+        
         &:hover{
           background: #1A1B37;
           color: white;
@@ -190,6 +214,10 @@ color: white;
 
       &:disabled{
         color: white;
+        @media only screen and (max-width: 800px){
+          color: #72B84E;
+        }
+        
 
       }
     }
@@ -200,12 +228,19 @@ color: white;
     height: 5px;
     width: 70%;
     @apply relative;
+    @media only screen and (max-width: 800px){
+    background-color: #72B84E;
+    height: 10px;
+    position: relative;
+    right: 50px;
+
+}
     .no_progress{
       @apply h-1 cursor-pointer rounded-full;
       background-color: white;
       .progress{
         @apply flex w-full justify-end h-1 rounded-full relative;
-        background-color: white;
+        background-color: #1A1B37;
       }
     }
     .progress_btn_pos{
@@ -213,8 +248,10 @@ color: white;
       .progress_btn{
         @apply w-2 h-2 md:w-4 md:h-4  absolute rounded-full shadow;
         background-color: white;
-        
         top: -10px;
+        @media only screen and (max-width: 800px){
+          background-color: #1A1B37;
+        }
       }
     }
   }
@@ -223,6 +260,10 @@ color: white;
     font-size: 0.8em;
     justify-content: space-around;
     color: white;
+    @media only screen and (max-width: 800px){
+     color: #72B84E; 
+     position: relative;
+     left: 40px;    }
   }
 }
 </style>
