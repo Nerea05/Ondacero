@@ -1,13 +1,13 @@
 <template>
   <div>
      <h5  id="section-name" class="h5-pc-bold" >{{tit1}}</h5>
-    <card-principal :source="'/presentador1.png'" />
+    <card-principal :seccion="'Los programas de OndaCero'" :autor="'Esther Eiros'" :titulo="'Gente viajera'" :source="'/presentador1.png'" />
     <h5 id="section-name" class="h5-pc-bold" > {{tit2}} </h5>
     <div class="grid-cards">
-    <simple-card :source="'/presentador1.png'"  />
-    <simple-card :source="'/presentador2.png'" />
-    <simple-card :source="'/presentador3.png'"/>
-    <simple-card :source="'/presentador4.png'"/>
+    <simple-card :autor="'Esther Eiros'" :titulo="'Gente viajera'" :source="'/presentador1.png'"  />
+    <simple-card :autor="'Carlos Alsina'" :titulo="'Más de uno'"  :source="'/presentador2.png'" />
+    <simple-card :autor="'Carlos Rodríguez'" :titulo="'Como el perro y el gato'" :source="'/presentador3.png'"/>
+    <simple-card :autor="'Julia otero'" :titulo="'Julia en la onda'" :source="'/presentador4.png'"/>
     </div>
     <h5 id="section-name" class="h5-pc-bold" > {{tit3}} </h5>
     <div class="grid-cards">

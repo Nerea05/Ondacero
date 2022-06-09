@@ -1,6 +1,7 @@
 <template>
   <div class="player">
     <!-- song details -->
+    <div class="angle-down"><fa :icon="['fas', 'angle-down']" /></div>
     <h5 id="reproductortext" class="subtitle2">After Hours Gema Ruiz </h5>
 
     <!-- control buttons -->
@@ -136,6 +137,15 @@ export default {
 </script>
 
 <style lang="postcss">
+.angle-down{
+color: white;
+position: relative;
+left: 1100px;
+top: 65px;
+@media only screen and (max-width: 800px){
+  display:none;
+}
+}
 #reproductortext{
 margin-left: 130px;
 padding: 25px;
@@ -151,13 +161,14 @@ color: white;
 
 .player{
   background-color: #72B84E;
-  height: 200px;
+  height: 350px;
   position: relative;
   bottom: 50px;
   border-top-left-radius: 6%;
   border-top-right-radius: 6%;
   box-shadow: 10px 10px 31px 0px rgba(114,184,78,0.37);
   @media only screen and (max-width: 800px){
+  height: 220px;
   background-color: white;
   box-shadow: none;
   right: 50px

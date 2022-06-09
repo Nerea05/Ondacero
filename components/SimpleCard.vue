@@ -4,8 +4,8 @@
         <div class="simple-card"> 
         <img class="imgPresentador-simple" :src="source" alt="">
         <div id="text-box-simple">
-        <h5 class="leading">Título</h5>
-        <h6 id= "sub-text" class="body2"><span class="autor">autor</span></h6>
+        <h5 class="leading">{{titulo}}</h5>
+        <h6 id= "sub-text" class="body2"><span class="autor">{{autor}}</span></h6>
         </div>
         <span class="btn-follow"><button-seguir /></span>
     </div>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-   props:['source']
+   props:['source','seccion', 'titulo', 'autor', 'otrainfo'] 
 }
 </script>
 
@@ -60,8 +60,9 @@ export default {
 
 .leading
     color: $blue
+    font-size: 18pt
     @media only screen and (max-width: 800px)
-        font-size: 30pt
+        font-size: 18pt
         @apply font-black
 #seccion-text
     color: $green

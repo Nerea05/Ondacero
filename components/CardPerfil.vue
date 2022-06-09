@@ -2,8 +2,8 @@
   <div class="card-perfil">
       <img class="img-podcast" src="/podcast1.png" alt="emoji">
      <div class="card-perfil-text">
-         <h5 >Título</h5>
-     <h6 id= "sub-text" class="body2"><span class="autor">autor</span></h6>
+         <h5 >{{titulo}}</h5>
+     <h6 id= "sub-text" class="body2"><span class="autor">{{autor}}</span></h6>
      <div class="social">
          <default-button class="bt1" :textbutton2="'seguir'" />
      <default-button class="bt2" :iconType="'arrow-down'" />
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-   
+    props:[ 'seccion', 'titulo', 'autor', 'otrainfo']
    
 }
 </script>

@@ -4,10 +4,10 @@
         <div class="card-principal"> 
             <img class="imgPresentador" :src="source" alt="">
             <div id="text-box">
-                <h6 class="body2" id="secciontext">Sección</h6>
-                <h3 class="leading">Título</h3>
+                <h6 class="body2" id="secciontext">{{seccion}}</h6>
+                <h3 class="leading">{{titulo}}</h3>
                 <h6 id= "sub-text" class="body2">
-                    <span class="autor">autor</span> <span>nombre del programa</span>
+                    <span class="autor">{{autor}}</span> <span>{{otrainfo}}</span>
                 </h6>
             <default-button :textbutton2="'seguir'" />
             </div>
@@ -87,7 +87,7 @@
 
 <script>
 export default {
-   props:['source']
+   props:['source', 'seccion', 'titulo', 'autor', 'otrainfo']
 }
 
 </script>
